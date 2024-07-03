@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --standard-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    --stardard-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #84E1AD;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #40B972, #5AA67D, #1C613A 80%);
+    height: 180px;
+    color: white;
+}
+
+.header-content {
+    text-align: center;
+    justify-content: center;
+}
+
+h1.header-content {
+    padding-top: 20px;
+    font-size: 2em;
+    text-shadow: var(--stardard-text-shadow);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
+
+p.header-content {
+    padding-top: 25px;
+    text-shadow: var(--stardard-text-shadow);
+}
+
+.header-menu {
+    padding-top: 48px;
+    font-size: 0.8em;
+    margin-left: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-menu>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 15px;
+}
+
+.header-menu>a:hover {
+    background-color: #5AA67D;
+    transition: background-color .7s ease;
+    border-radius: 5px;
+    color: #1C613A;
+}
+
+main {
+    background-color: white;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 20px 15px;
+    min-width: 300px;
+    max-width: 1000px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: var(--standard-box-shadow)
+}
+
+.font-idroid {
+    font-family: Idroid;
+}
+
+.section-one h2 {
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section-one h3 {
+    font-weight: normal;
+    padding: 3px 0 3px 10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #5cf79d81, #5efa9f23, white);
+    border-radius: 10px 0 0 10px;
+}
+
+.section-one p {
+    padding: 20px 0px;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+.links-externos {
+    text-decoration: none;
+    color: #1C613A;
+    font-weight: bolder;
+    padding: 3px 5px;
+}
+
+.links-externos::after {
+    content: "\00a0\1F517";
+}
+
+.links-externos:hover {
+    background-color: #1C613A;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.first-image,
+.first-image-pq {
+    width: 100%;
+}
+
+.bugdroid-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.destaque {
+    color: #1C613A;
+    text-shadow: var(--stardard-text-shadow);
+    font-weight: bolder;
+}
+
+.box-video {
+    position: relative;
+    background-color: #1C613A;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.iframe-video {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+}
+
+@media (min-width: 650px) {
+    .first-image-pq {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .first-image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 597px) {
+
+    .header-menu {
+        padding-top: 34px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header-menu a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-menu a {
+        font-size: 0.7em;
+    }
+}
+
+.section-two {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: var(--standard-box-shadow)
+}
+
+.section-two-header {
+    background-color: #38a264;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+.section-two-main {
+    background-color: #bff2d5;
+    padding: 20px 10px;
+    line-height: 2em;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.section-two-main p {
+    text-indent: 2em;
+}
+
+.section-two-main ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.final-text {
+    padding: 20px 0px;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+footer {
+    margin: 10px 0 1px 0;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #1C613A;
+    text-align: center;
+}
+
+.footer-link {
+    color: white;
+    text-shadow: var(--stardard-text-shadow);
+}
